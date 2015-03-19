@@ -1,3 +1,5 @@
+npm install -g sinopia
+
 sinopia
 
 ☯ cd my-package/
