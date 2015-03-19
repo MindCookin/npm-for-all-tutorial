@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "description": "A journey through npm development capabilities",
   "main": "index.js",
+  "private": "true",
   "scripts": {
     "test": "mocha",
-    "start": "npm i && mocha && node piper.js"
+    "start": "npm i && mocha && node piper.js",
+    "lint": "jshint"
   },
   "keywords": [
     "npm",
@@ -15,12 +17,11 @@
   "license": "ISC",
   "devDependencies": {
     "chai": "^2.1.2",
+    "jshint": "^2.6.3",
     "mocha": "^2.2.1",
     "tape": "^3.5.0"
   },
   "dependencies": {
-    "browserify": "^9.0.3",
-    "lodash": "^3.5.0",
-    "react": "^0.13.1"
+    "lorem-ipsum": "^1.0.1"
   }
 }
