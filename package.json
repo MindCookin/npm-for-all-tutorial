@@ -1,0 +1,24 @@
+{
+  "name": "npm-for-all",
+  "version": "0.0.1",
+  "description": "A journey through npm development capabilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "npm",
+    "tutorial"
+  ],
+  "author": "Santiago Bernabé",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.2.1",
+    "tape": "^3.5.0"
+  },
+  "dependencies": {
+    "browserify": "^9.0.3",
+    "lodash": "^3.5.0",
+    "react": "^0.13.1"
+  }
+}
