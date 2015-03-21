@@ -4,12 +4,18 @@
   "description": "A journey through npm development capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "browserify react-widget.js > dist.js"
   },
   "keywords": [
     "npm",
     "tutorial"
   ],
+  "browserify": {
+     "transform": [
+       ["reactify"]
+     ]
+  },
   "author": "Santiago Bernabé",
   "license": "ISC",
   "devDependencies": {
@@ -17,8 +23,9 @@
     "tape": "^3.5.0"
   },
   "dependencies": {
+    "after-time": "0.0.1",
     "browserify": "^9.0.3",
-    "domify": "^1.3.2",
-    "english-time": "0.0.9"
+    "react": "^0.13.1",
+    "reactify": "^1.1.0"
   }
 }
