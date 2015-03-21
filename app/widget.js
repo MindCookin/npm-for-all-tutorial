@@ -4,10 +4,10 @@ var React = require('react'),
 
 Widget = React.createClass({
   getInitialState: function() {
-    return {message: 'Please fill input above, will be reversed :O'};
+    return {message: 'Please fill input above, will be reversed.'};
   },
   handleChange: function (e) {
-    var value = e.target.value ? reverse(e.target.value) : 'Please fill input above, will be reversed :O';
+    var value = e.target.value ? reverse(e.target.value) : 'Please fill input above, will be reversed.';
     this.setState({message: value});
   },
   render: function () {

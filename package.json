@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "watchify app/widget.js -o dist.js -d -v"
+    "build": "gulp"
   },
   "keywords": [
     "npm",
@@ -21,8 +21,14 @@
   "author": "Santiago Bernabé",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.4.0",
+    "gulp": "^3.8.11",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-util": "^3.0.4",
     "mocha": "^2.2.1",
-    "tape": "^3.5.0"
+    "tape": "^3.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   },
   "dependencies": {
     "browserify": "^9.0.3",
