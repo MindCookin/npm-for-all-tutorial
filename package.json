@@ -5,16 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify react-widget.js > dist.js"
+    "build": "watchify app/widget.js -o dist.js -d -v"
   },
   "keywords": [
     "npm",
     "tutorial"
   ],
   "browserify": {
-     "transform": [
-       ["reactify"]
-     ]
+    "transform": [
+      [
+        "reactify"
+      ]
+    ]
   },
   "author": "Santiago Bernabé",
   "license": "ISC",
@@ -23,9 +25,10 @@
     "tape": "^3.5.0"
   },
   "dependencies": {
-    "after-time": "0.0.1",
     "browserify": "^9.0.3",
     "react": "^0.13.1",
-    "reactify": "^1.1.0"
+    "reactify": "^1.1.0",
+    "reverse-string": "0.0.4",
+    "watchify": "^2.4.0"
   }
 }
