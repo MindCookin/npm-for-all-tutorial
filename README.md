@@ -1,6 +1,8 @@
 # Scripts
 
-This is a really basic use of scripts inside npm. 
+This is a really basic use of scripts inside npm, but it shows its great capabilities.
+
+You can run `npm start`, `npm test` and `npm lint`.
 
 It shows up the versatility that scripts enable in project building. 
 
