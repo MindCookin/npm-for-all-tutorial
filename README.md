@@ -4,6 +4,8 @@ Browserify let you use npm packages into the browser. How? easy, it is just a Co
 
 Simple, but incredibly powerful.
 
-This branch shows a simple browserify project. Just run `npm install` and `npm run build` to see the magic.
+This branch shows up a basic browserify project. We require a node_modules module called _english-time_ into our app, and load it from `widget.js`. We also use `require('widget')` to insert our own module into `index.html` dynamically.
 
-Please check `package.json` for an _indepth_ overview. 
+Run `npm start` to see it in action.
+
+Please check `package.json`, `index.html` and `widget.js` for an depth overview. 
