@@ -1,3 +1,1 @@
-Show some examples of API usage:
-
-list, view, prune, uninstall, help, etc...
+# Browserify
