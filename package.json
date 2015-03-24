@@ -7,7 +7,8 @@
   "scripts": {
     "test": "mocha",
     "start": "npm i && mocha && node piper.js",
-    "lint": "jshint"
+    "lint": "jshint",
+    "preinstall": "echo 'Hey, I am running an install'"
   },
   "keywords": [
     "npm",
