@@ -5,12 +5,16 @@
     <title>Browserify Widget</title>
   </head>
   <body>
+    <h3>Write a time sentence in English (i.e. 50 days and one minute) and it will be translated into seconds:</h4>
     <script src="dist.js"></script>
     <script>
       var widget = require('widget');
       var w = widget();
       w.appendTo(document.querySelector('body'));
     </script>
+    <script type='text/javascript' id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.4.0.js'><\/script>".replace("HOST", location.hostname));
+//]]></script>
   </body>
 </html>
 

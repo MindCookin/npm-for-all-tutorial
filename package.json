@@ -4,7 +4,9 @@
   "description": "A journey through npm development capabilities",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm i && browserify -r ./widget.js:widget -o dist.js",
+    "start": "npm run build && browser-sync start --server"
   },
   "keywords": [
     "npm",
@@ -13,6 +15,7 @@
   "author": "Santiago Bernabé",
   "license": "ISC",
   "devDependencies": {
+    "browser-sync": "^2.4.0",
     "mocha": "^2.2.1",
     "tape": "^3.5.0"
   },
